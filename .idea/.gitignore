@@ -1,0 +1,23 @@
+# Default ignored files
+/workspace.xml
+
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+/storage/*.key
+/vendor
+.env
+.idea
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+composer.lock
+/vcs.xml
+/sqldialects.xml
+/misc.xml
+/modules.xml
+/dataSources.xml

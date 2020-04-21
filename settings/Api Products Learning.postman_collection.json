@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "39818298-3ef0-43de-b94b-49b7490e15de",
+		"name": "Api Products Learning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "READ PRODUCTS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/products_learning/api/controllers/product/read.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"products_learning",
+								"api",
+								"controllers",
+								"product",
+								"read.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE PRODUCTS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"Amazing Pillow 2.0\",\n    \"price\" : \"199\",\n    \"description\" : \"The best pillow for amazing programmers.\",\n    \"category_id\" : 2,\n    \"created\" : \"2018-06-01 00:35:07\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/products_learning/api/controllers/product/create.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"products_learning",
+								"api",
+								"controllers",
+								"product",
+								"create.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "READ ONE PRODUCTS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/products_learning/api/controllers/product/read_one.php?id=60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"products_learning",
+								"api",
+								"controllers",
+								"product",
+								"read_one.php"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "60"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE  PRODUCT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\" : \"106\",\n    \"name\" : \"Amazing Pillow 3.0\",\n    \"price\" : \"255\",\n    \"description\" : \"The best pillow for amazing programmers.\",\n    \"category_id\" : 2,\n    \"created\" : \"2018-08-01 00:35:07\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/products_learning/api/controllers/product/update.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"products_learning",
+								"api",
+								"controllers",
+								"product",
+								"update.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE  PRODUCT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\" : \"106\",\n}"
+						},
+						"url": {
+							"raw": "http://localhost/products_learning/api/controllers/product/delete.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"products_learning",
+								"api",
+								"controllers",
+								"product",
+								"delete.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH  PRODUCTs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/products_learning/api/controllers/product/search.php?s=shirt",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"products_learning",
+								"api",
+								"controllers",
+								"product",
+								"search.php"
+							],
+							"query": [
+								{
+									"key": "s",
+									"value": "shirt"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "READ PAGING PRODUCTs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/products_learning/api/controllers/product/read_paging.php?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"products_learning",
+								"api",
+								"controllers",
+								"product",
+								"read_paging.php"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "READ CATEGORIES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/products_learning/api/controllers/category/read.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"products_learning",
+								"api",
+								"controllers",
+								"category",
+								"read.php"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
